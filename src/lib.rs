@@ -245,6 +245,6 @@ fn point_in_triangle(point: &Vec3, (va, vb, vc): (&Vec3, &Vec3, &Vec3)) -> bool 
     if u.dot(v) < 0.0 {
         false
     } else {
-        u.dot(w) < 0.0
+        u.dot(w) > 0.0
     }
 }
