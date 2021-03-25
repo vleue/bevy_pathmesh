@@ -44,7 +44,7 @@ fn main() {
         .run();
 }
 
-#[derive(Clone, PartialEq, Eq)]
+#[derive(Clone, PartialEq, Eq, Debug, Hash)]
 enum AppState {
     Setup,
     Playing,
